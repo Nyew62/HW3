@@ -4,7 +4,11 @@ using namespace std;
 
 student::student(){credits=0;}
 student::student(int numCred){credits = numCred;}
-student::getCredits(){}
-student::setCredits(){}
+student::student(int cred, string Smajor){credits=cred;
+major =Smajor;}
 
-student::student(int numofCredit, string major):
+string student::getmajor() {return major;}
+void student::setmajor(std::string Smajor) {major=Smajor;}
+int student::getCredits(){return credits;}
+void student::setCredits(int cred){credits=cred;}
+

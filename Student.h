@@ -9,11 +9,15 @@ class student:
         public Person{
 public:
     student();
-    int getCredits(){return credits;};
-    void setCredits(int cred){credits=cred;}
+    int getCredits();
+    void setCredits(int cred);
     student(int numofCredit);
+    student(int cred, string Smajor);
+    string getmajor();
+    void setmajor(string Smajor);
 private:
     int credits;
+    string major;
 };
 
 
